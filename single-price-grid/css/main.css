@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eef1ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  max-width: 700px;
+  overflow: hidden;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.join-our-community h1 {
+  color: #59aca0;
+  margin-bottom: 20px;
+}
+
+.join-our-community h3 {
+  color: #bedf32;
+  margin-bottom: 20px;
+}
+
+.join-our-community p {
+  color: #bfc0c2;
+  line-height: 1.5;
+}
+
+.join-our-community {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.monthly-subscription {
+  display: flex;
+  flex-direction: column;
+  background-color: #2cb3af;
+}
+
+.monthly-subscription .plan-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.monthly-subscription .plan-detail__price {
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.monthly-subscription .plan-detail__price > span {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.monthly-subscription .plan-detail__access {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10px;
+}
+
+.monthly-subscription button {
+  background-color: #bedf32;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 300ms ease;
+}
+
+.monthly-subscription button:hover {
+  background-color: rgba(190, 223, 50, 0.78);
+}
+
+.why-us {
+  background-color: #4bbcbf;
+}
+
+.why-us h3 {
+  margin-bottom: 20px;
+}
+
+.why-us .tutorials {
+  width: 75%;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+.monthly-subscription,
+.why-us {
+  width: 50%;
+  color: #fff;
+  padding: 30px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+@media (max-width: 575px) {
+  .monthly-subscription,
+  .why-us {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
