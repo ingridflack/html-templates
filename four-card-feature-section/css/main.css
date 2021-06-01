@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.container header {
+  margin: 0 auto;
+  max-width: 450px;
+  text-align: center;
+}
+
+.container header > h1 {
+  font-weight: 400;
+  font-size: 25px;
+  color: #514f5a;
+  margin-top: 30px;
+}
+
+.container header > h1 > strong {
+  display: block;
+  color: #4d4f5e;
+  margin-top: 5px;
+}
+
+.container header > p {
+  color: #b7b8ba;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  max-width: 350px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 5px;
+  border-top: 4px solid transparent;
+  width: 100%;
+}
+
+.card p {
+  flex: 1;
+  margin-top: 10px;
+}
+
+.card h4 {
+  color: #4d4f5e;
+  font-size: 20px;
+}
+
+.card p {
+  color: #b7b8ba;
+  font-size: 14px;
+}
+
+.card h4,
+.card p {
+  line-height: 1.5;
+}
+
+.card svg {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.card--supervisor {
+  margin-bottom: 30px;
+  border-top-color: #00c8c8;
+}
+
+.card--calculator {
+  margin-top: 30px;
+  border-top-color: #377bc9;
+}
+
+.card--team-builder {
+  border-top-color: #e63950;
+  margin-bottom: 30px;
+}
+
+.card--karma {
+  border-top-color: #fdbf00;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+@media (min-width: 740px) and (max-width: 1200px) {
+  .cards {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "s c" "ca c";
+  }
+
+  .card__container {
+    grid-area: c;
+  }
+
+  .card--supervisor {
+    grid-area: s;
+    margin: 0;
+  }
+
+  .card--calculator {
+    grid-area: ca;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container header {
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .container header h1 {
+    font-size: 32px;
+  }
+
+  .card--supervisor {
+    margin: 0 30px 0 0;
+  }
+
+  .card--calculator {
+    margin: 0 0 0 30px;
+  }
+}
